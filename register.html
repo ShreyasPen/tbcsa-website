@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register — TBCSA</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Join TBCSA</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="officers.html">Officers</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Sign up</h2>
+      <form action="#" method="post">
+        <label>Name:<br /><input type="text" name="name" required></label>
+        <label>Email:<br /><input type="email" name="email" required></label>
+        <label>Grade:<br /><input type="text" name="grade" placeholder="e.g., 10th"></label>
+        <fieldset>
+          <legend>I'm interested in (check all that apply):</legend>
+          <label><input type="checkbox" name="interest" value="usaco"> USACO practice & training</label>
+          <label><input type="checkbox" name="interest" value="ai"> AI seminars</label>
+          <label><input type="checkbox" name="interest" value="crypto"> Cryptography</label>
+          <label><input type="checkbox" name="interest" value="webdev"> Web development</label>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+      <p class="small">This is a static form for now — connect it to a backend or Google Forms to collect responses.</p>
+    </section>
+  </main>
+</body>
+</html>
