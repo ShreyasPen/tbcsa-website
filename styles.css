@@ -196,3 +196,23 @@ footer {
     width: 100%;
 }
 
+.program-box {
+    background-color: #f4f4f9; /* Light background */
+    border: 1px solid #ddd; /* Light border */
+    padding: 20px;
+    margin: 10px 0; /* Margin between cards */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.program-card h3 {
+    color: #333; /* Darker text for headings */
+    font-size: 1.5em; /* Larger font size for titles */
+}
+
+.program-box p {
+    color: #555; /* Slightly lighter text for paragraphs */
+    line-height: 1.6; /* Make the text more readable */
+}
+
+
