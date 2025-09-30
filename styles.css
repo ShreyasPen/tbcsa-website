@@ -1,37 +1,43 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     background-color: #f4f4f9;
     color: #333;
 }
 
-header {
-    background-color: #1e3d58;
-    color: white;
-    padding: 15px 0;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-h1 {
-    text-align: center;
+/* Header */
+header {
+    background-color: #1e3d58;
+    padding: 20px 0;
+    color: white;
 }
 
 nav ul {
     list-style: none;
     text-align: center;
-    padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
-    text-decoration: none;
     font-size: 18px;
+    text-transform: uppercase;
 }
 
 nav ul li a:hover {
@@ -43,146 +49,74 @@ nav ul li a:hover {
     text-align: center;
     background-color: #34495e;
     color: white;
-    padding: 50px 0;
+    padding: 60px 20px;
 }
 
 .hero h1 {
-    font-size: 3em;
-    margin: 0;
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
 .hero p {
     font-size: 1.25em;
-    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
-/* Mission Section */
-.mission {
-    background-color: white;
-    padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 900px;
-    text-align: center;
-}
-
-.mission h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.mission p {
+.cta-button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
     font-size: 1.2em;
-    line-height: 1.6;
-    color: #555;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-/* Programs Section */
-.programs {
-    padding: 40px 20px;
+.cta-button:hover {
+    background-color: #e67e22;
+}
+
+/* Content Sections */
+section {
+    padding: 60px 20px;
     text-align: center;
 }
 
-.programs h2 {
+h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    color: #34495e;
 }
 
-.programs-container {
+/* Programs */
+.program-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .program-card {
-    background-color: #fff;
-    padding: 20px;
+    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
     width: 45%;
-    min-width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .program-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
 .program-card h3 {
     font-size: 1.8em;
-    margin-bottom: 15px;
-    color: #34495e;
+    margin-bottom: 20px;
 }
 
 .program-card p {
     font-size: 1.1em;
-    line-height: 1.6;
-    color: #555;
-}
-
-/* Officer Section */
-.officer {
-    padding: 40px 20px;
-    text-align: center;
-    margin: 20px auto;
-    background-color: white;
-    max-width: 900px;
-}
-
-.officer img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.officer h2 {
-    font-size: 2em;
-    color: #1e3d58;
-}
-
-.officer p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #555;
-}
-
-/* Event Section */
-.event {
-    padding: 40px 20px;
-    text-align: center;
-    margin: 20px auto;
-    background-color: #ecf0f1;
-    max-width: 900px;
-}
-
-.event img {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.event h2 {
-    font-size: 2.5em;
-    color: #1e3d58;
-}
-
-.event p {
-    font-size: 1.1em;
-    color: #555;
-}
-
-/* Registration Section */
-iframe {
-    border: none;
-    width: 100%;
-    max-width: 800px;
-    height: 850px;
-    margin: 20px auto;
-    display: block;
 }
 
 /* Footer */
@@ -191,28 +125,5 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    margin-top: 40px;
 }
-
-.program-box {
-    background-color: #f4f4f9; /* Light background */
-    border: 1px solid #ddd; /* Light border */
-    padding: 20px;
-    margin: 10px 0; /* Margin between cards */
-    border-radius: 8px; /* Slightly rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.program-card h3 {
-    color: #333; /* Darker text for headings */
-    font-size: 1.5em; /* Larger font size for titles */
-}
-
-.program-box p {
-    color: #555; /* Slightly lighter text for paragraphs */
-    line-height: 1.6; /* Make the text more readable */
-}
-
-
