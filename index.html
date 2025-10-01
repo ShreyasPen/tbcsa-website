@@ -3,53 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tampa Bay CS Club - Home</title>
+    <title>Tampa Bay CS Club</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">TBCSC</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="officers.html">Officers</a></li>
                 <li><a href="events.html">Events</a></li>
-                <li><a href="registration.html">Registration</a></li>
+                <li><a href="registration.html">Register</a></li>
             </ul>
-        </nav>
-    </header>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
-    <main>
-        <section class="hero">
-            <h1>Welcome to Tampa Bay CS Club</h1>
-            <p>Empowering the next generation of computer scientists in the Tampa Bay area.</p>
-        </section>
-
-        <section class="mission">
-            <h2>Our Mission</h2>
-            <p>At Tampa Bay CS Club (TBCSC), our mission is to provide underprivileged students in the Tampa Bay area with opportunities to explore the world of computer science. We believe that technology has the power to change lives, and we aim to equip students with the skills to succeed in a tech-driven future. Through hands-on programming workshops, mentorship, and collaboration, we help students develop the technical skills they need to excel in both academics and their future careers. Our club offers specialized training in competitive programming and cutting-edge topics like AI and web development, ensuring that students are prepared for the challenges of tomorrow's tech landscape. Ultimately, we strive to create a diverse, inclusive community where students from all backgrounds can thrive and pursue careers in technology.</p>
-        </section>
-
-        <section class="programs">
-    <h2>What We Do</h2>
-    <div class="programs-container">
-        <div class="program-card">
-            <div class="program-box">
-                <h3>USACO Training</h3>
-                <p>We offer dedicated training for the USA Computing Olympiad (USACO), where students learn key problem-solving techniques and algorithms. Our program supports students from beginner to advanced levels, helping them improve their coding skills and prepare for competitive challenges. USACO participation builds both technical abilities and critical thinking, empowering students to pursue careers in tech.</p>
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Empowering the Next Generation</h1>
+            <p class="hero-subtitle">Building computer science skills in Tampa Bay's underprivileged youth</p>
+            <div class="hero-buttons">
+                <a href="registration.html" class="btn btn-primary">Join Us</a>
+                <a href="events.html" class="btn btn-secondary">View Events</a>
             </div>
         </div>
-        <div class="program-card">
-            <div class="program-box">
-                <h3>Tech Webinars</h3>
-                <p>Our tech webinars cover a wide range of topics, including artificial intelligence (AI), cryptography, and basic web development. Led by industry professionals, these sessions provide valuable insights and practical knowledge of cutting-edge technologies. Students gain a deeper understanding of the tech world and learn how to apply these concepts in real-world scenarios.</p>
+        <div class="hero-graphic">
+            <div class="floating-card card-1">
+                <div class="code-line"></div>
+                <div class="code-line short"></div>
+                <div class="code-line"></div>
+            </div>
+            <div class="floating-card card-2">
+                <div class="code-line"></div>
+                <div class="code-line"></div>
+                <div class="code-line short"></div>
+            </div>
+            <div class="floating-card card-3">
+                <div class="code-line short"></div>
+                <div class="code-line"></div>
+                <div class="code-line"></div>
             </div>
         </div>
-    </div>
-</section>
-    </main>
+    </section>
+
+    <section class="mission">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Mission</h2>
+                <div class="underline"></div>
+            </div>
+            <p class="mission-text">
+                At Tampa Bay CS Club (TBCSC), our mission is to provide underprivileged students in the Tampa Bay area with opportunities to explore the world of computer science. We believe that technology has the power to change lives, and we aim to equip students with the skills to succeed in a tech-driven future. Through hands-on programming workshops, mentorship, and collaboration, we help students develop the technical skills they need to excel in both academics and their future careers.
+            </p>
+        </div>
+    </section>
+
+    <section class="programs">
+        <div class="container">
+            <div class="section-header">
+                <h2>What We Do</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>USACO Training</h3>
+                    <p>We offer dedicated training for the USA Computing Olympiad (USACO), where students learn key problem-solving techniques and algorithms. Our program supports students from beginner to advanced levels, helping them improve their coding skills and prepare for competitive challenges.</p>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3>Tech Webinars</h3>
+                    <p>Our tech webinars cover a wide range of topics, including artificial intelligence (AI), cryptography, and basic web development. Led by industry professionals, these sessions provide valuable insights and practical knowledge of cutting-edge technologies.</p>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Mentorship</h3>
+                    <p>Students receive one-on-one guidance from experienced mentors who provide personalized support, career advice, and technical expertise to help them reach their full potential in the field of computer science.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Start Your Journey?</h2>
+            <p>Join our community of aspiring computer scientists today</p>
+            <a href="registration.html" class="btn btn-primary btn-large">Register Now</a>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Tampa Bay CS Club. All Rights Reserved.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Tampa Bay CS Club</h4>
+                    <p>Empowering the next generation of computer scientists</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="officers.html">Officers</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="registration.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Tampa Bay Area, Florida</p>
+                    <p>info@tampabaycsc.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tampa Bay CS Club. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        const mobileToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileToggle.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
