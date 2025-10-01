@@ -1,53 +1,256 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tampa Bay CS Club - Events</title>
+    <title>Events - Tampa Bay CS Club</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <header>
-        <nav>
+    <nav class="navbar">
+        <div class="nav-container">
             <div class="logo">
-                <a href="index.html">Tampa Bay CS Club</a>
+                <span class="logo-text">TBCSC</span>
             </div>
-            <ul>
+            <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="officers.html">Officers</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="registration.html">Registration</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="registration.html">Register</a></li>
             </ul>
-        </nav>
-    </header>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
-    <main>
-        <h1 class="center-heading">Our Events</h1>
+    <section class="page-hero">
+        <div class="container">
+            <h1>Upcoming Events</h1>
+            <p>Join us for workshops, webinars, and community gatherings</p>
+        </div>
+    </section>
 
-        <div class="event-container">
-            <div class="event-card">
-                <h3>AI and Cryptography Workshop</h3>
-                <img src="ai_cryptography_workshop.jpg" alt="AI Workshop">
-                <p>A two-day workshop exploring AI and cryptography with expert-led coding challenges.</p>
+    <section class="events">
+        <div class="container">
+            <div class="events-filter">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="workshop">Workshops</button>
+                <button class="filter-btn" data-filter="webinar">Webinars</button>
+                <button class="filter-btn" data-filter="competition">Competitions</button>
             </div>
-            <div class="event-card">
-                <h3>USACO Training Bootcamp</h3>
-                <img src="usaco_bootcamp.jpg" alt="USACO Bootcamp">
-                <p>Our 3-week bootcamp prepares students for the USA Computing Olympiad with hands-on training.</p>
-            </div>
-            <div class="event-card">
-                <h3>Web Development Fundamentals</h3>
-                <img src="web_dev_workshop.jpg" alt="Web Development">
-                <p>Learn the basics of web development and create your first website in this interactive workshop.</p>
+
+            <div class="events-grid">
+                <div class="event-card" data-category="workshop">
+                    <div class="event-header">
+                        <span class="event-badge workshop">Workshop</span>
+                        <span class="event-date">Oct 15, 2025</span>
+                    </div>
+                    <h3>Python Programming Basics</h3>
+                    <p class="event-time">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        6:00 PM - 8:00 PM EST
+                    </p>
+                    <p class="event-location">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        Virtual Event
+                    </p>
+                    <p class="event-description">Learn the fundamentals of Python programming in this beginner-friendly workshop. Perfect for students just starting their coding journey.</p>
+                    <a href="registration.html" class="btn btn-small">Register</a>
+                </div>
+
+                <div class="event-card" data-category="webinar">
+                    <div class="event-header">
+                        <span class="event-badge webinar">Webinar</span>
+                        <span class="event-date">Oct 22, 2025</span>
+                    </div>
+                    <h3>Introduction to AI & Machine Learning</h3>
+                    <p class="event-time">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        7:00 PM - 8:30 PM EST
+                    </p>
+                    <p class="event-location">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        Virtual Event
+                    </p>
+                    <p class="event-description">Join industry professionals as they explore the fascinating world of artificial intelligence and its real-world applications.</p>
+                    <a href="registration.html" class="btn btn-small">Register</a>
+                </div>
+
+                <div class="event-card" data-category="competition">
+                    <div class="event-header">
+                        <span class="event-badge competition">Competition</span>
+                        <span class="event-date">Nov 5, 2025</span>
+                    </div>
+                    <h3>USACO Practice Contest</h3>
+                    <p class="event-time">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        10:00 AM - 2:00 PM EST
+                    </p>
+                    <p class="event-location">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        Virtual Event
+                    </p>
+                    <p class="event-description">Test your skills in a timed competitive programming contest designed to prepare students for the USA Computing Olympiad.</p>
+                    <a href="registration.html" class="btn btn-small">Register</a>
+                </div>
+
+                <div class="event-card" data-category="workshop">
+                    <div class="event-header">
+                        <span class="event-badge workshop">Workshop</span>
+                        <span class="event-date">Nov 12, 2025</span>
+                    </div>
+                    <h3>Web Development with HTML/CSS</h3>
+                    <p class="event-time">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        6:00 PM - 8:00 PM EST
+                    </p>
+                    <p class="event-location">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        Virtual Event
+                    </p>
+                    <p class="event-description">Build your first website from scratch! Learn HTML structure and CSS styling to create beautiful web pages.</p>
+                    <a href="registration.html" class="btn btn-small">Register</a>
+                </div>
+
+                <div class="event-card" data-category="webinar">
+                    <div class="event-header">
+                        <span class="event-badge webinar">Webinar</span>
+                        <span class="event-date">Nov 19, 2025</span>
+                    </div>
+                    <h3>Cryptography Fundamentals</h3>
+                    <p class="event-time">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        7:00 PM - 8:30 PM EST
+                    </p>
+                    <p class="event-location">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        Virtual Event
+                    </p>
+                    <p class="event-description">Discover the basics of encryption, decryption, and modern cryptographic techniques used to secure digital communications.</p>
+                    <a href="registration.html" class="btn btn-small">Register</a>
+                </div>
+
+                <div class="event-card" data-category="workshop">
+                    <div class="event-header">
+                        <span class="event-badge workshop">Workshop</span>
+                        <span class="event-date">Dec 3, 2025</span>
+                    </div>
+                    <h3>Data Structures & Algorithms</h3>
+                    <p class="event-time">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        6:00 PM - 8:00 PM EST
+                    </p>
+                    <p class="event-location">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        Virtual Event
+                    </p>
+                    <p class="event-description">Deep dive into essential data structures and algorithms that form the foundation of computer science and competitive programming.</p>
+                    <a href="registration.html" class="btn btn-small">Register</a>
+                </div>
             </div>
         </div>
-    </main>
+    </section>
+
+    <section class="calendar-section">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our calendar to never miss an event</p>
+            <a href="mailto:info@tampabaycsc.org?subject=Calendar Subscription" class="btn btn-secondary">Subscribe to Calendar</a>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Tampa Bay CS Club. All Rights Reserved.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Tampa Bay CS Club</h4>
+                    <p>Empowering the next generation of computer scientists</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="officers.html">Officers</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="registration.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Tampa Bay Area, Florida</p>
+                    <p>info@tampabaycsc.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tampa Bay CS Club. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
-</body>
-</html>
+    <script>
+        const mobileToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileToggle.classList.toggle('active');
+        });
+
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const eventCards = document.querySelectorAll('.event-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.dataset.filter;
+                
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                eventCards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
