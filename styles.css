@@ -538,6 +538,26 @@ body {
     margin-bottom: 50px;
     flex-wrap: wrap;
 }
+.events-section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: var(--dark);
+    text-align: center;
+}
+
+.past-events-title {
+    margin-top: 80px;
+}
+
+.event-card.upcoming {
+    border: 3px solid var(--primary);
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+}
+
+.upcoming-badge {
+    background: var(--primary);
+    color: var(--white);
+}
 
 .filter-btn {
     padding: 10px 24px;
