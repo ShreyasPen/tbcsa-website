@@ -289,18 +289,44 @@ body {
     opacity: 0.95;
 }
 
+.discord-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.discord-email-input {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    background: var(--white);
+    color: var(--dark);
+}
+
+.discord-email-input:focus {
+    outline: 3px solid rgba(255, 255, 255, 0.5);
+}
+
 .discord-button {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     padding: 14px 32px;
     background: var(--white);
     color: #5865F2;
     text-decoration: none;
+    border: none;
     border-radius: 8px;
     font-weight: 700;
     font-size: 16px;
     transition: all 0.3s;
+    cursor: pointer;
+    font-family: inherit;
 }
 
 .discord-button:hover {
