@@ -1092,6 +1092,61 @@ footer {
     }
 }
 
+/* Event Resources */
+.event-resources {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid var(--gray-light);
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.resource-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: var(--primary);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.resource-link:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.resource-link svg {
+    width: 18px;
+    height: 18px;
+}
+
+.event-card.upcoming {
+    border: 3px solid var(--primary);
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+}
+
+.upcoming-badge {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.events-section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: var(--dark);
+    text-align: center;
+}
+
+.past-events-title {
+    margin-top: 80px;
+}
+
 /* Animation utilities */
 @keyframes fadeIn {
     from {
