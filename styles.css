@@ -249,6 +249,69 @@ body {
     50% { transform: translateY(-20px); }
 }
 
+
+/* Discord Section */
+.discord-section {
+    margin-top: 50px;
+    padding: 30px;
+    background: linear-gradient(135deg, #5865F2 0%, #7289DA 100%);
+    border-radius: 16px;
+    text-align: center;
+    color: var(--white);
+}
+
+.discord-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.discord-icon svg {
+    width: 40px;
+    height: 40px;
+    color: var(--white);
+}
+
+.discord-section h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.discord-section p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    opacity: 0.95;
+}
+
+.discord-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 32px;
+    background: var(--white);
+    color: #5865F2;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.discord-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.discord-button svg {
+    width: 24px;
+    height: 24px;
+}
 /* Buttons */
 .btn {
     display: inline-block;
